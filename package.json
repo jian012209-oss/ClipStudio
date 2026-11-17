@@ -1,0 +1,15 @@
+{
+  "name": "clipstudio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ClipStudio mobile editing app by JIAN PLAY STUDIOS",
+  "scripts": {
+    "build": "npx cap sync android",
+    "android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}

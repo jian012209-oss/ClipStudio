@@ -1,28 +1,33 @@
-# ClipStudio
+# ClipStudio — Android package
 
-A responsive dark-themed video-editing and motion-graphics UI prototype.
+A mobile-first editing prototype combining a CapCut-inspired basic workflow with Alight Motion-inspired layer and motion-graphics controls.
 
 ## Included
-- Home, projects, editor, effects/assets, Pro membership, and Admin Studio screens
-- Fake login/sign-up interface and guest access
-- Basic/Pro mode presentation
-- Local demo activation-code generator and one-time redemption
-- Browser media preview, playback, seeking, speed, volume, filters, and text overlay
-- Project metadata saved in browser localStorage
-- GitHub Actions workflow for GitHub Pages
+- Responsive dark purple/blue ClipStudio interface
+- Basic and Pro workspace modes
+- Local project save/list/open/delete
+- Import video, image, and audio assets
+- Multi-lane timeline (video/image, text/graphics, audio)
+- Select, duplicate, delete, split, and arrange imported assets
+- Preview for selected video/image assets
+- Text and shape layers
+- Inspector controls for duration, start, opacity, scale, rotation, brightness, contrast, saturation
+- Effect presets and basic preview filters
+- Pro activation-code generator in Admin Studio
+- GitHub Actions workflow to build a debug APK
 
-## Important prototype limits
-This is a front-end prototype, not a finished professional video-rendering application.
-MP4 rendering, a full multi-track editing engine, keyframe animation, cloud sync, and
-secure cross-device activation are not implemented.
+## Build APK with GitHub
+1. Upload the contents of this folder to the root of your GitHub repository, including the hidden `.github` folder.
+2. Open **Actions** in the repository.
+3. Run **Build ClipStudio Android APK**.
+4. When successful, download the `ClipStudio-debug-apk` artifact from the workflow run.
 
-The activation-code screen and Admin Studio are local demo logic only. Codes generated
-in one browser are not shared with other devices. Before distributing real Pro codes,
-connect a secure backend that stores hashed codes and enforces single-use redemption,
-expiry, and revocation. Do not put admin secrets in this static site.
+## Current limitations
+This is a functional starter editor, not a feature-equivalent replacement for CapCut or Alight Motion. Full multi-track compositing/export to MP4, frame-accurate audio mixing, real vector/mask rendering, graph interpolation, and advanced GPU effects still require a native rendering engine and additional implementation. The Export button currently does not render a complete composed MP4.
 
-## Publish
-1. In GitHub, open **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Push this repository to `main`; the workflow deploys the site.
-4. The site URL will be `https://jian012209-oss.github.io/ClipStudio/`.
+The admin password check is a client-side gate intended only for personal local use. It is not secure against someone inspecting the app files. Pro activation and projects are local to this device/browser; generated codes are not remotely transferable.
+
+## App identity
+- App name: ClipStudio
+- Package ID: com.jianplaystudios.clipstudio
+- Studio: JIAN PLAY STUDIOS

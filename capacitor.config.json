@@ -1,0 +1,8 @@
+{
+  "appId": "com.jianplaystudios.clipstudio",
+  "appName": "ClipStudio",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
