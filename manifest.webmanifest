@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "ClipStudio \u2014 JIAN PLAY STUDIOS",
+  "short_name": "ClipStudio",
+  "description": "Mobile-friendly video and motion editing workspace.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07061a",
+  "theme_color": "#07061a",
+  "icons": [
+    {
+      "src": "./hero.jpg",
+      "sizes": "452x448",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
