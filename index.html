@@ -2,9 +2,6 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="theme-color" content="#07061a">
-<meta name="description" content="ClipStudio by JIAN PLAY STUDIOS — a mobile-friendly video and motion editing workspace.">
-<link rel="manifest" href="./manifest.webmanifest">
-<link rel="apple-touch-icon" href="./hero.jpg">
 <title>ClipStudio — JIAN PLAY STUDIOS</title>
 <style>
 :root{--bg:#07061a;--panel:#13102e;--panel2:#1b1742;--line:#2b2559;--text:#f5f3ff;--muted:#a7a2cf;--pri:#8b5cf6;--pri2:#a78bfa;--blue:#4f7dff;--cyan:#38bdf8;--red:#ff6b8b;--grad:linear-gradient(100deg,#8b5cf6,#4f7dff)}
@@ -1476,15 +1473,4 @@ setPlayIcon();updAspect();updUndo();setMode('basic');showSlide(0);armSlides();re
 window.CS={get clips(){return clips},set clips(v){clips=v},get t(){return curT},get proj(){return proj},get selected(){return selected},get mode(){return mode},get zoom(){return zoom},get pro(){return pro},get lic(){return lic},setMode,select,setTime,total,val,changed,refreshAll,commit,nav,newProj,openSheet,closeSheet,play,pause,renderFrame,projSize,muxMP4,res,strips,pps,checkCode,signCode,redeem,loadLic};
 })();
 </script>
-
-<script>
-/* ClipStudio install/offline support. The editor itself remains in index.html. */
-if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(err => {
-      console.warn('ClipStudio offline support could not be enabled:', err);
-    });
-  });
-}
-</script>
-\n</body></html>
+</body></html>
